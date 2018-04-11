@@ -1,1 +1,40 @@
-%main.html
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" 
+    href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <script> 
+    $(document).ready(function(){
+        $(".dropbtn").hover(function(handlerInOut){
+         $(".dropdown-content").slideToggle("fast");
+        });
+    $(document).ready(function(){
+        $(".dropbtn").mousein(function(handlerIn){
+         $(".dropdown-content").slideDown("fast");
+        });
+            $(".dropbtn").mouseout(function(handlerOut){
+                $(".dropdown-content").slideUp("fast");
+        });
+    });
+});
+</script>
+    
+</head>
+<body>
+<div class="navbar">
+  <a href="#AboutMe">About me</a>
+  <div class="dropdown">
+    <button class="dropbtn">Projects
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+    <a href="#Contact">Contact</a>
+</div>
+    Her skal der skrives ting
+</body>
+</html>
