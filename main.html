@@ -4,19 +4,13 @@
     href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
     <script> 
-    $(document).ready(function(){
-        $(".dropbtn").hover(function(handlerInOut){
-         $(".dropdown-content").slideToggle("fast");
-        });
-    $(document).ready(function(){
-        $(".dropbtn").mousein(function(handlerIn){
-         $(".dropdown-content").slideDown("fast");
-        });
-            $(".dropbtn").mouseout(function(handlerOut){
-                $(".dropdown-content").slideUp("fast");
+    $(document).ready(function() {
+        $(".dropdown").hover(function() {
+            $(".dropdown-content").slideDown("fast");
+        }, function() {
+            $(".dropdown-content").slideUp("fast");
         });
     });
-});
 </script>
     
 </head>
