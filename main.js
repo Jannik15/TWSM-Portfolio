@@ -6,7 +6,7 @@ var navbar = window.document.getElementById("myNavbar");
 
 // Get the offset position of the navbar
 var sticky = navbar.scrollTop;
-console.log(sticky.scrollTop);
+/*console.log(sticky.scrollTop);*/
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
