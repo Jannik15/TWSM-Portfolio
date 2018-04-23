@@ -10,6 +10,12 @@
     */
 }
 
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
 /* Links inside the navbar */
 .navbar a {
   float: left;
@@ -67,12 +73,16 @@
   background-color: #ddd;
 }
 
+.content {
+    padding: 16px;
+}
+
 .sticky {
   position: sticky;
   top: 0px;
   width: 100%
 }
 
-.sticky {
+.sticky + content {
   padding-top: 200px;
 }
