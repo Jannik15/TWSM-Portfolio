@@ -2,7 +2,10 @@
 <head>
     <link rel="stylesheet" type="text/css" 
     href="main.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    
+    <script src="main.js"></script>
     <script> 
     $(document).ready(function() {
         $(".dropdown").hover(function() {
@@ -10,25 +13,58 @@
         }, function() {
             $(".dropdown-content").slideUp("fast");
         });
-    });
+  
+   /*     
+    if($(window).scrollTop()>=95 && !$("navbar").hasClass("fixed")){
+        $("navbar").addClass("fixed"); 
+    }
+    else if($(window).scrollTop()<95 && $("navbar").hasClass("fixed")){
+       $("navbar").removeClass("fixed") 
+    }   
+    */
+});
 </script>
+
+    
     
 </head>
 <body>
-<div class="navbar">
+<div id="myNavbar">
+ <div class="navbar"> 
   <a href="#AboutMe">About me</a>
-  <div class="dropdown">
+  <div class="dropdown" id="myaNavbar">
     <button class="dropbtn">Projects
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="#">AAU 1st semester</a>
+      <a href="#">AAU 2st semester</a>
+      <a href="#">AAU 3st semester</a>
+      <a href="#">AAU 4st semester</a>
+      <a href="#">AAU 5st semester</a>
+      <a href="#">AAU 6st semester</a>
     </div>
   </div> 
     <a href="#Contact">Contact</a>
+        </div>
 </div>
-    Her skal der skrives ting
+    <pre> <font size ="+3">
+     Her skal der skrives ting  
+                men først skal vi liiige
+                 prøve den der scroll funktion
+            exde lul
+            pls
+            help
+            me
+        someone
+    i have 
+    crippling
+    depression
+    punktum slut.
+BTW, når du hertil og navbaren er i toppen 
+    har du vundet (° ͜ʖ ͡°)
+    </font>
+    </pre>
+    
 </body>
 </html>
