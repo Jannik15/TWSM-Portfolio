@@ -1,4 +1,41 @@
 /* Navbar container */
+.header {
+    background-color: dimgrey;
+    font-family: Century Gothic;  
+}
+
+div.header img {
+    border-radius: 50%;
+}
+
+.container {
+    
+    position: relative; /* static*/
+    text-align: center;
+    color: white;
+    z-index: -1;
+}
+
+div.aboutme img{
+    position: inherit;
+    width: 100%
+        
+}
+
+.center {
+    position: inherit;
+    top: 0;
+    left: 50%;
+    vertical-align: text-top;
+    transform: translate(-50%, -100%);
+    font-family: Century Gothic;
+    //-webkit-text-stroke-width: 1px;
+    //-webkit-text-stroke-color: black;
+    background: grey;
+    opacity: 0.6;
+    width: 100%
+}
+
 .navbar {
   overflow: hidden;
   background-color: #00497A;
