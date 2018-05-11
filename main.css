@@ -1,7 +1,9 @@
 /* Navbar container */
 .header {
     background-color: dimgrey;
-    font-family: Century Gothic;  
+    font-family: Century Gothic;
+    font-size: 20;
+    //background-image: url("create2.png");
 }
 
 div.header img {
@@ -10,37 +12,118 @@ div.header img {
 
 .aboutMeSection {
     position: relative; /* static*/
-    text-align: center;
     color: white;
     z-index: -1;
     width: 100%;
     height: auto;
 }
 
-div.aboutme img{
-    position: relative;
-    width: 100%    
+#AboutMe > img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
 }
 
-.center {
-    position: absolute;
+#AboutMe {
+    position: relative;
+    overflow: hidden;
     top: 0;
     width: 100%;
-    //height: 100%;
+    height: 400px;
+    z-index: -1;
+}
+
+#AboutMeText {
+    position: inherit;
     font-family: Century Gothic;
-    //vertical-align: text-top;
-    font-family: Century Gothic;
-    -webkit-text-stroke-width: 1px;
+    color: white;
+    //left: 50%;
+    //transform: translateX(-50%);
+    //transform: translateX(-50%);
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    background: grey;
-    opacity: 0.6;
-    
+    text-align: center;
+}
+
+#Project1{
+    position: relative; /* static*/
+    color: white;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    background-color: #B0B09E;
+    box-shadow:inset 0px 0px 10px 0px #C0C0C0;
+}
+
+#Project2{
+position: relative; /* static*/
+    color: white;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    background-color: darkseagreen;   
+    box-shadow:inset 0px 0px 10px 0px #C0C0C0;
+}
+
+#Project3{
+    position: relative; /* static*/
+    color: white;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    background-color: cadetblue;
+    box-shadow:inset 0px 0px 10px 0px #C0C0C0;
+
+}
+
+#Project4{
+    position: relative; /* static*/
+    color: white;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    background-color: dodgerblue;
+    box-shadow:inset 0px 0px 10px 0px #C0C0C0;
+}
+
+#Project5{
+    position: relative; /* static*/
+    color: white;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    background-color:mediumpurple;
+    box-shadow:inset 0px 0px 10px 0px #C0C0C0;
+}
+
+#Project6{
+    position: relative; /* static*/
+    color: white;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    background-color: darkgrey;
+    box-shadow:inset 0px 0px 10px 0px #C0C0C0;
+}
+
+#ContactMe{
+    position: relative; /* static*/
+    color: black;
+    z-index: -1;
+    width: 100%;
+    height: 50px;
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 1px;
 }
 
 .navbar {
   overflow: hidden;
   background-color: #00497A;
   font-family: Century Gothic;
+  z-index: 999;
   /* Easy fixed navbar in css
   position: fixed;
   top: 0;
@@ -113,7 +196,7 @@ div.aboutme img{
 
 .content {
     padding: 16px;
-}
+} 
 
 .sticky {
   position: sticky;

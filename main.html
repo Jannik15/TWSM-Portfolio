@@ -3,6 +3,8 @@
     <link rel="stylesheet" type="text/css" 
     href="main.css">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
     
     <script src="main.js"></script>
@@ -23,6 +25,32 @@
     }   
     */
 });
+        
+        $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
 </script>
     
 </head>
@@ -30,9 +58,9 @@
 <div class="header">
   <h1>Hello my name is *Insert name* </h1>
     <img src="kid.png" alt="Avatar" style="width:200px">
-    <p><font size ="+2">and welcome to my portfolio</p>
-</div>
-    
+    <p><font size ="+3">and welcome to my portfolio</font></p>
+    </div>
+
 <div id="myNavbar">
  <div class="navbar"> 
   <a href="#AboutMe">About me</a>
@@ -41,32 +69,64 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">AAU 1st semester</a>
-      <a href="#">AAU 2st semester</a>
-      <a href="#">AAU 3st semester</a>
-      <a href="#">AAU 4st semester</a>
-      <a href="#">AAU 5st semester</a>
-      <a href="#">AAU 6st semester</a>
+      <a href="#Project1">AAU 1st semester</a>
+      <a href="#Project2">AAU 2st semester</a>
+      <a href="#Project3">AAU 3st semester</a>
+      <a href="#Project4">AAU 4st semester</a>
+      <a href="#Project5">AAU 5st semester</a>
+      <a href="#Project6">AAU 6st semester</a>
     </div>
   </div> 
-    <a href="#Contact">Contact</a>
+    <a href="#ContactMe">Contact</a>
         </div>
 </div>
 
 <div id="AboutMe">
-    <div class="aboutMeSection">
-    <div class="aboutme img">
-        <img src=create.png>
-        </div>
-    <div class="center">
+        <img src="create2.png">
+        <div id="AboutMeText">
         <font size ="+3"> 
-<h3>Sample text.</h3>
-    <p>Sample text</p>
+<h2>About me</h2></font>
+    <font size ="+3"> 
+        <h3>Yes hello, bachelor btw. Not yet, but we're going places. FUUUUUUUUUUUUUUU
+        </h3></font>
         
-        </font>
-        </div> 
-        </div>
+    </div>
 </div>
+    
+<div id="Project1">
+    <iframe width="200px" height="200px" src="https://www.youtube.com/embed/SUkDCCEIY5A?controls=1">
+</iframe>
+    
+    </div>    
+    
+<div id="Project2">
+    <iframe width="200px" height="200px" src="https://www.youtube.com/embed/_F-aHNszrro?controls=1">
+</iframe>
+    </div>    
+    
+<div id="Project3">
+     <iframe width="200px" height="200px" src="https://www.youtube.com/embed/8fAmDJrSNPw?controls=1">
+</iframe>
+    </div>   
+    
+<div id="Project4">
+    <iframe width="200px" height="200px" src="https://www.youtube.com/embed/kIXC4wxumjY?controls=1">
+</iframe>
+    </div>   
+    
+<div id="Project5">
+    
+    </div>   
+
+<div id="Project6">
+    
+    </div>   
+    
+<div id="ContactMe">
+    <font size ="4">
+    <p>Email: sampletext@whatevermail.huh?</p>
+    </font>
+    </div>    
     
 </body>
 </html>
