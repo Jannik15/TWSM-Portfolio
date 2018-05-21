@@ -102,6 +102,11 @@ div.header img {
     box-shadow:inset 0px 0px 10px 0px #C0C0C0;
 }
 
+.float-right {
+float: right;
+width: 50%;
+}
+
 #ContactMe{
     position: relative; /* static*/
     color: black;
