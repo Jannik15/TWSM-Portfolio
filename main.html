@@ -10,12 +10,12 @@
     <script src="main.js"></script>
     <script> // The following script is a JQuery slider with a timer in the slideUp function.
     $(document).ready(function() {
-        var timer, $this;
+        var timer;
         $(".dropdown").hover(function() {
                 $(".dropdown-content").slideDown("fast");
         }, function() {
             clearTimeout(timer);
-            $this = $(this);
+            // The following functions sets a timeout of 200 ms, so the function can only be called once every 200 ms 
             timer = setTimeout(function () {
                 $(".dropdown-content").slideUp("fast");
             }, 200);
@@ -59,14 +59,14 @@
 
 <div id="myNavbar">
  <div class="navbar"> 
-  <a href="#AboutMe">About me</a>
+  <a href="#AboutMe">About us</a>
   <div class="dropdown" id="myaNavbar">
     <button class="dropbtn">Projects
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="#Project1">Digital Timecapsule</a>
-      <a href="#Project2">Microft</a>
+      <a href="#Project2">Mycroft</a>
       <a href="#Project3">Castle Dashers</a>
       <a href="#Project4">Bastille</a>
       <a href="#Project5">Automated baby carriage</a>
@@ -82,10 +82,9 @@
         <div id="AboutMeText">
         <font size ="+3"> 
 <h2>About us</h2></font>
-    <font size ="+3"> 
-        <h3>Hello, we are two upcoming bachelors who study Medialogy at Aalborg University in Denmark. At the moment we are in our 6th semester, and this portfolio will showcase our combined work from the previous five semesters. Below we feature a showcase of products from either courses or semester projects.
+    <font size ="+2"> 
+        <h3>Hello, we are two upcoming bachelors who study Medialogy at Aalborg University in Denmark. At the moment we are in our 6th semester, and this portfolio will showcase our combined work from the previous five semesters, of which we have chosen six of our most interesting projects. These can be navigated to by hovering over "Projects" tab in the navigation bar at the top of the screen, or simply by scrolling downward.
         </h3></font>
-        
     </div>
 </div>
     
@@ -102,7 +101,7 @@
 </iframe>
     <div id="ProjectText">
     <font size ="4">
-        <p>This was a semester project from 4th semester Medialogy in 2017, where a speech-based home automation system was designed, implemented and tested using the system usability scale.</p></font>
+        <p>This was a semester project from 4th semester Medialogy in 2017, where a speech-based home automation system was designed and implemented using an Open Source Voice Assistant known as Mycroft AI, and tested using the system usability scale to determine user satisfaction.</p></font>
     </div>    
     </div>
 <div id="Project3">
@@ -118,7 +117,7 @@
 </iframe>
     <div id="ProjectText">
     <font size ="4">
-        <p>Bastille is a 5th semester Medialogy project regarding whether the aspect of interaction increased immersion in VR experiences.</p></font></div>
+        <p>Bastille is a semester project from 5th semester Medialogy in 2017, which regarded whether the aspect of interaction increased immersion in VR experiences.</p></font></div>
        
     </div>
 <div id="Project5">
@@ -134,7 +133,7 @@
     </iframe>
     <div id="ProjectText">
     <font size ="4">
-        <p>DayChaser miniproject in THEORY AND PRACTICE OF GAME DESIGN AND DEVELOPMENT spring 2018.</p></font>
+        <p>DayChaser was a miniproject in the Theory and Practice of Game Design and Development Medialogy course in spring 2018. The game revolved around picking up lights to turn night into day, and then battling a monster that was previously hidden in the dark. A playable prototype of the game was finished and showcased, and a trailer was created for it.</p></font>
     </div>
     </div>
 <div id="ContactMe">
