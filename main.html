@@ -8,22 +8,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
     
     <script src="main.js"></script>
-    <script> 
+    <script> // The following script is a JQuery slider with a timer in the slideUp function.
     $(document).ready(function() {
+        var timer, $this;
         $(".dropdown").hover(function() {
-            $(".dropdown-content").slideDown("fast");
+                $(".dropdown-content").slideDown("fast");
         }, function() {
-            $(".dropdown-content").slideUp("fast");
+            clearTimeout(timer);
+            $this = $(this);
+            timer = setTimeout(function () {
+                $(".dropdown-content").slideUp("fast");
+            }, 200);
         });
-  
-   /*     
-    if($(window).scrollTop()>=95 && !$("navbar").hasClass("fixed")){
-        $("navbar").addClass("fixed"); 
-    }
-    else if($(window).scrollTop()<95 && $("navbar").hasClass("fixed")){
-       $("navbar").removeClass("fixed") 
-    }   
-    */
 });
         
         $(document).ready(function(){
@@ -56,9 +52,9 @@
 </head>
 <body>
 <div class="header">
-  <h1>Hello my name is *Insert name* </h1>
-    <img src="kid.png" alt="Avatar" style="width:200px">
-    <p><font size ="+3">and welcome to my portfolio</font></p>
+  <h1>Hello, we are Alexander Ramussen & Jannik Neerdal </h1>
+    <img src="MadeBy.png" alt="Avatar" style="width:200px">
+    <p><font size ="+3">Welcome to our portfolio</font></p>
     </div>
 
 <div id="myNavbar">
@@ -85,32 +81,32 @@
         <img src="create2.png">
         <div id="AboutMeText">
         <font size ="+3"> 
-<h2>About me</h2></font>
+<h2>About us</h2></font>
     <font size ="+3"> 
-        <h3>Yes hello, bachelor btw. Not yet, but we're going places. FUUUUUUUUUUUUUU
+        <h3>Hello, we are two upcoming bachelors who study Medialogy at Aalborg University in Denmark. At the moment we are in our 6th semester, and this portfolio will showcase our combined work from the previous five semesters. Below 
         </h3></font>
         
     </div>
 </div>
     
 <div id="Project1">
-    <iframe width="200px" height="200px" src="https://www.youtube.com/embed/SUkDCCEIY5A?controls=1">
+    <iframe width="500px" height="500px" src="https://www.youtube.com/embed/SUkDCCEIY5A?controls=1">
 </iframe>
     
     </div>    
     
 <div id="Project2">
-    <iframe width="200px" height="200px" src="https://www.youtube.com/embed/_F-aHNszrro?controls=1">
+    <iframe width="500px" height="500px" src="https://www.youtube.com/embed/_F-aHNszrro?controls=1">
 </iframe>
     </div>    
     
 <div id="Project3">
-     <iframe width="200px" height="200px" src="https://www.youtube.com/embed/8fAmDJrSNPw?controls=1">
+     <iframe width="500px" height="500px" src="https://www.youtube.com/embed/8fAmDJrSNPw?controls=1">
 </iframe>
     </div>   
     
 <div id="Project4">
-    <iframe width="200px" height="200px" src="https://www.youtube.com/embed/kIXC4wxumjY?controls=1">
+    <iframe width="500px" height="500px" src="https://www.youtube.com/embed/kIXC4wxumjY?controls=1">
 </iframe>
     </div>   
     
@@ -124,7 +120,7 @@
     
 <div id="ContactMe">
     <font size ="4">
-    <p>Email: sampletext@whatevermail.huh?</p>
+    <p>Email: asra15@student.aau.dk, jneerd15@student.aau.dk</p>
     </font>
     </div>    
     

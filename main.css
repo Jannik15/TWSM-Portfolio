@@ -48,7 +48,6 @@ div.header img {
 }
 
 #Project1{
-    position: relative; /* static*/
     color: white;
     z-index: -1;
     width: 100%;
@@ -58,7 +57,6 @@ div.header img {
 }
 
 #Project2{
-position: relative; /* static*/
     color: white;
     z-index: -1;
     width: 100%;
@@ -68,7 +66,6 @@ position: relative; /* static*/
 }
 
 #Project3{
-    position: relative; /* static*/
     color: white;
     z-index: -1;
     width: 100%;
@@ -79,7 +76,6 @@ position: relative; /* static*/
 }
 
 #Project4{
-    position: relative; /* static*/
     color: white;
     z-index: -1;
     width: 100%;
@@ -89,7 +85,6 @@ position: relative; /* static*/
 }
 
 #Project5{
-    position: relative; /* static*/
     color: white;
     z-index: -1;
     width: 100%;
@@ -99,7 +94,6 @@ position: relative; /* static*/
 }
 
 #Project6{
-    position: relative; /* static*/
     color: white;
     z-index: -1;
     width: 100%;
