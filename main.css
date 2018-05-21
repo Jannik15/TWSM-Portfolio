@@ -47,12 +47,18 @@ div.header img {
     text-align: center;
 }
 
+#ProjectText{
+    font-family: Lucida Bright;
+    padding: 50px;
+    color: black;
+}
+
 #Project1{
     color: white;
     z-index: -1;
     width: 100%;
     height: 500px;
-    background-color: #B0B09E;
+    background-color: lightgrey;
     box-shadow:inset 0px 0px 10px 0px #C0C0C0;
 }
 
@@ -61,7 +67,7 @@ div.header img {
     z-index: -1;
     width: 100%;
     height: 500px;
-    background-color: darkseagreen;   
+    background-color: white;   
     box-shadow:inset 0px 0px 10px 0px #C0C0C0;
 }
 
@@ -70,7 +76,7 @@ div.header img {
     z-index: -1;
     width: 100%;
     height: 500px;
-    background-color: cadetblue;
+    background-color: lightgray;
     box-shadow:inset 0px 0px 10px 0px #C0C0C0;
 
 }
@@ -80,7 +86,7 @@ div.header img {
     z-index: -1;
     width: 100%;
     height: 500px;
-    background-color: dodgerblue;
+    background-color: white;
     box-shadow:inset 0px 0px 10px 0px #C0C0C0;
 }
 
@@ -89,7 +95,7 @@ div.header img {
     z-index: -1;
     width: 100%;
     height: 500px;
-    background-color:mediumpurple;
+    background-color: lightgray;
     box-shadow:inset 0px 0px 10px 0px #C0C0C0;
 }
 
@@ -98,7 +104,7 @@ div.header img {
     z-index: -1;
     width: 100%;
     height: 500px;
-    background-color: darkgrey;
+    background-color: white;
     box-shadow:inset 0px 0px 10px 0px #C0C0C0;
 }
 
